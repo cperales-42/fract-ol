@@ -6,7 +6,7 @@
 /*   By: cperales <cperales@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 18:58:02 by cperales          #+#    #+#             */
-/*   Updated: 2025/01/18 03:20:41 by cperales         ###   ########.fr       */
+/*   Updated: 2025/01/18 03:32:54 by cperales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,10 +62,7 @@ int	main(void)
 	img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel,
 						&img.line_length, &img.endian);
 
-	ft_paint_vertical_line(img, WINDOW_HEIGHT, 960, 0X00FF0000);
-	//ft_paint_vertical_line(img, 1000, 1000, 0X00FF0000);
-	ft_paint_horizontal_line(img, WINDOW_WIDTH, 540, 0x00FF0000);
-	//ft_paint_horizontal_line(img, 1000, 1000, 0X00FF0000);
+	ft_print_spopp(img, 0x00FF0000);
 	
 	mlx_put_image_to_window(mlx, win, img.img, 0, 0);
 	mlx_loop(mlx);

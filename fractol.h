@@ -6,7 +6,7 @@
 /*   By: cperales <cperales@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 18:59:27 by cperales          #+#    #+#             */
-/*   Updated: 2025/01/18 03:17:43 by cperales         ###   ########.fr       */
+/*   Updated: 2025/01/18 04:05:42 by cperales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ typedef struct	s_data {
 #include "libft/libft.h"
 
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color);
-void ft_paint_vertical_line(t_data img, int npixels, int hpos, int color);
-void ft_paint_horizontal_line(t_data img, int npixels, int vpos, int color);
+void    ft_paint_vertical_line(t_data img, int startvpos, int npixels, int vpos, int color);
+void    ft_paint_horizontal_line(t_data img, int starthpos, int npixels, int vpos, int color);
+void ft_print_spopp(t_data img, int color);
 #endif

@@ -6,11 +6,11 @@
 #    By: cperales <cperales@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/13 18:50:24 by cperales          #+#    #+#              #
-#    Updated: 2025/01/18 03:01:41 by cperales         ###   ########.fr        #
+#    Updated: 2025/01/18 03:42:31 by cperales         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = fractol
+NAME = spopp
 
 CC = cc 
 
@@ -28,7 +28,8 @@ LIBFT_LIB = $(LIBFT_PATH)libft.a
 
 CFILES = \
 				main.c \
-				fractol_utils.c
+				fractol_utils.c \
+				random.c
 
 OBJECTS = $(CFILES:.c=.o)
 
